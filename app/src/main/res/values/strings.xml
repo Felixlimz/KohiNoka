@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">KohiNoka</string>
+    <string name="tvOnboardingone">Managing Your Money lqlqlqkwiqhj jewqwuhqe hwheiqejb heqiqq</string>
+    <string name="skip">SKIP</string>
+    <string name="next">NEXT</string>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in2">SIGN IN</string>
+    <string name="pwd">*****</string>
+    <string name="desc">Description</string>
+    <string name="title">title</string>
+    <string name="start">START</string>
+    <string name="kohinoka">KohiNoka</string>
+    <string name="pediasatu">Pedia</string>
+    <string name="pediadua">Pedia 2</string>
+    <string name="text_primary">Primary</string>
+    <string name="text_subtitle">Secondary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detail">Detail Activity</string>
+</resources>
