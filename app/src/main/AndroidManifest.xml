@@ -15,7 +15,6 @@
         <activity android:name=".NokaPedia.HomePediaActivity" />
         <activity android:name=".video.VideoListActivity" />
         <activity android:name=".scan.ScanActivity" />
-        <activity android:name=".SignInActivity" />
         <activity android:name=".onboarding.ThreeActivity" />
         <activity android:name=".onboarding.TwoActivity" />
         <activity android:name=".onboarding.OneActivity" />

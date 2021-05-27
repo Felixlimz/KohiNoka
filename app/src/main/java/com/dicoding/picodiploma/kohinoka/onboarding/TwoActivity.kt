@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.dicoding.picodiploma.kohinoka.MainActivity
 import com.dicoding.picodiploma.kohinoka.R
-import com.dicoding.picodiploma.kohinoka.SignInActivity
 
 class TwoActivity : AppCompatActivity() {
 
@@ -22,7 +22,7 @@ class TwoActivity : AppCompatActivity() {
             startActivity(Intent(this@TwoActivity, ThreeActivity::class.java))
         }
         btnSkip?.setOnClickListener {
-            var intent = Intent(this@TwoActivity, SignInActivity::class.java)
+            var intent = Intent(this@TwoActivity, MainActivity::class.java)
             startActivity(intent)
         }
     }

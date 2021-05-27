@@ -103,4 +103,6 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment-ktx:2.2.2'
 
 
+    //tensoflow
+    implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
 }
