@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/coffeee"/>
+        android:src="@drawable/logosapp"/>
 
     <ProgressBar
         android:id="@+id/myProgressBar"

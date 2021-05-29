@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KohiNoka">
-        <activity android:name=".NokaPedia.DetailDuaPediaActivity"></activity>
+        <activity android:name=".solution.SolutionActivity"></activity>
+        <activity android:name=".NokaPedia.DetailDuaPediaActivity" />
         <activity android:name=".NokaPedia.HomePediaActivity" />
         <activity android:name=".video.VideoListActivity" />
         <activity android:name=".scan.ScanActivity" />

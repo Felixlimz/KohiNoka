@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.picodiploma.kohinoka.databinding.ActivityScanBinding
 import com.dicoding.picodiploma.kohinoka.imageprocessor.Classify
+import com.dicoding.picodiploma.kohinoka.solution.SolutionActivity
 
 class ScanActivity : AppCompatActivity() {
 
@@ -42,6 +43,9 @@ class ScanActivity : AppCompatActivity() {
             scanBinding.tvImage.setImageBitmap(image)
             val result = classifier.recognizeImage(image)
             runOnUiThread { Toast.makeText(this, result.get(0).title, Toast.LENGTH_SHORT).show() }
+            val intent = Intent(this, SolutionActivity::class.java)
+            intent.putExtra("EXTRA", result.get(0).title)
+            startActivity(intent)
         }
     }
 
