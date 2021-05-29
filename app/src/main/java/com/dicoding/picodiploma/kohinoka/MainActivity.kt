@@ -19,12 +19,12 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
-        mainBinding.scanProduct.setOnClickListener {
+        mainBinding.scanProduk.setOnClickListener {
             val intent = Intent(this, ScanActivity::class.java)
             startActivity(intent)
         }
 
-        mainBinding.inpirasiKita.setOnClickListener{
+        mainBinding.video.setOnClickListener{
             val intent = Intent(this, VideoListActivity::class.java)
             startActivity(intent)
         }
