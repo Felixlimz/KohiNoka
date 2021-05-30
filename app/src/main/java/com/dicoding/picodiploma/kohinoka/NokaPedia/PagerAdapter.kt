@@ -13,8 +13,7 @@ class PagerAdapter(private val mContext : Context, fm : FragmentManager):
     companion object{
         @StringRes
         private val TAB_TITLES = intArrayOf(
-            R.string.pediasatu,
-            R.string.pediadua
+            R.string.pediasatu
         )
 
     }
@@ -22,11 +21,10 @@ class PagerAdapter(private val mContext : Context, fm : FragmentManager):
     override fun getItem(position: Int): Fragment =
         when(position){
             0 -> PediaFragment()
-            1 -> DuaFragment()
             else -> Fragment()
         }
 
-    override fun getCount(): Int = 2
+    override fun getCount(): Int = 1
 
     override fun getPageTitle(position: Int): CharSequence? =
         mContext.resources.getString(TAB_TITLES[position])
