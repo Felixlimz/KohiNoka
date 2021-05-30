@@ -1,8 +1,12 @@
 package com.dicoding.picodiploma.kohinoka.solution
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import com.bumptech.glide.Glide
 import com.dicoding.picodiploma.kohinoka.R
 import com.dicoding.picodiploma.kohinoka.databinding.ActivitySolutionBinding
 import com.google.firebase.firestore.ktx.firestore
@@ -17,25 +21,32 @@ class SolutionActivity : AppCompatActivity() {
         solutionBinding = ActivitySolutionBinding.inflate(layoutInflater)
         setContentView(solutionBinding.root)
 
-        solutionBinding.button.setOnClickListener {
-            val db = Firebase.firestore
+        val penyakit = intent.getStringExtra("EXTRA").toString()
+        val db = Firebase.firestore
 
-            val user = hashMapOf(
-                "nama" to "Kenneth",
-                "kategori" to "Wibu",
-                "lahir" to 1815,
-                "status" to "Jomblo"
-            )
+        val reference = db.collection("data_penyakit").document(penyakit)
+        reference.get()
+                .addOnSuccessListener {document ->
+                    if(document != null){
+                        Log.e("PRINT",document.data.toString())
+                        solutionBinding.tvPenyakit.text = penyakit
+                        solutionBinding.tvArtikel.text = document.data?.get("artikel").toString()
+                        Glide.with(this)
+                                .load(document.data?.get("poster").toString())
+                                .into(solutionBinding.tvImage)
 
-// Add a new document with a generated ID
-            db.collection("Kenneth")
-                .add(user)
-                .addOnSuccessListener { documentReference ->
-                    Log.d("TAG", "DocumentSnapshot added with ID: ${documentReference.id}")
+                        solutionBinding.button.visibility = View.VISIBLE
+                        solutionBinding.button.setOnClickListener {
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=${document.data?.get("video")}"))
+                            intent.setPackage("com.google.android.youtube")
+                            startActivity(intent)
+                        }
+                    } else {
+                        Log.e("ERROR", "NO DATA")
+                    }
                 }
-                .addOnFailureListener { e ->
-                    Log.w("TAG", "Error adding document", e)
+                .addOnFailureListener { exception ->
+                    Log.d("SA", "get failed with ", exception)
                 }
-        }
     }
 }

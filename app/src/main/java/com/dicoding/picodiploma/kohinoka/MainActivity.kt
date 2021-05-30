@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
+
         mainBinding.scanProduk.setOnClickListener {
             val intent = Intent(this, ScanActivity::class.java)
             startActivity(intent)
