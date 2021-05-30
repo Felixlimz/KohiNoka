@@ -1,5 +1,8 @@
 package com.dicoding.picodiploma.kohinoka.video
 
+import android.content.Intent
+import android.net.Uri
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -37,7 +40,9 @@ class VideoAdapter : RecyclerView.Adapter<VideoAdapter.VideoViewHolder>(){
                 tvItemTitle.text = video.snippet.title
                 tvItemSubtitle.text = video.snippet.channelTitle
                 itemView.setOnClickListener{
-                    //donothing
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=${video.id.videoId}"))
+                    intent.setPackage("com.google.android.youtube")
+                    itemView.context.startActivity(intent)
                 }
 
                 Glide.with(itemView.context)
