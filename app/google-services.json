@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "273840437642",
+    "project_id": "teak-spot-310812",
+    "storage_bucket": "teak-spot-310812.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273840437642:android:ad16348c10557482e43073",
+        "android_client_info": {
+          "package_name": "com.dicoding.picodiploma.kohinoka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273840437642-2033ihrvpb35m9hr04fmlg7v85dvg6r9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjxfnI3aJqX8cSCMj-TL1AANUsR9GL17A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273840437642-2033ihrvpb35m9hr04fmlg7v85dvg6r9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
