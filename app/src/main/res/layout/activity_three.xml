@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ijo"
+    android:background="@drawable/shape_rectangle_azure"
     tools:context=".onboarding.ThreeActivity">
 
     <ImageView
@@ -50,7 +50,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="248dp"
-        android:background="@drawable/shape_rectangle_green"
+        android:background="@drawable/shape_rectangle_coklat"
         android:text="@string/start"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
