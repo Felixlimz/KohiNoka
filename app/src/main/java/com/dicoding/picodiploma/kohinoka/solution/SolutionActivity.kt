@@ -22,6 +22,7 @@ class SolutionActivity : AppCompatActivity() {
         setContentView(solutionBinding.root)
 
         val penyakit = intent.getStringExtra("EXTRA").toString()
+
         val db = Firebase.firestore
 
         val reference = db.collection("data_penyakit").document(penyakit)
