@@ -61,6 +61,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/scanProduk"
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -74,16 +75,16 @@
                     android:src="@drawable/kameraa" />
 
                 <TextView
-                    android:id="@+id/scanProduk"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Menu1"
+                    android:text="Scan Tanaman"
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/video"
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -97,10 +98,9 @@
                     android:src="@drawable/videoo" />
 
                 <TextView
-                    android:id="@+id/video"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Menu2"
+                    android:text="Video Menarik"
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
@@ -108,6 +108,7 @@
 
 
             <LinearLayout
+                android:id="@+id/artikel"
                 android:orientation="vertical"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -121,10 +122,9 @@
                     android:src="@drawable/article" />
 
                 <TextView
-                    android:id="@+id/artikel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Menu3"
+                    android:text="Artikel Kopi"
                     android:textColor="@color/black"
                     android:textSize="16sp"/>
 
