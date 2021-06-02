@@ -103,7 +103,4 @@ dependencies {
 
     //tensoflow
     implementation 'org.tensorflow:tensorflow-lite:0.0.0-nightly'
-
-    //lottie
-    implementation "com.airbnb.android:lottie:3.4.1"
 }
