@@ -6,13 +6,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logokohin"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KohiNoka">
-        <activity android:name=".solution.SolutionActivity"></activity>
-        <activity android:name=".NokaPedia.DetailDuaPediaActivity" />
+        <activity android:name=".solution.SolutionActivity" />
         <activity android:name=".NokaPedia.HomePediaActivity" />
         <activity android:name=".video.VideoListActivity" />
         <activity android:name=".scan.ScanActivity" />
